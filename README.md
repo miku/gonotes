@@ -5,7 +5,7 @@ An exploration into the Go programming.
 * Examples: https://github.com/miku/gonotes/tree/main/x
 * Additional Examples: https://github.com/miku/demo
 
-# Outline [54]
+# Outline [55]
 
 ## Intro
 
@@ -50,6 +50,7 @@ An exploration into the Go programming.
 * [Small Patterns](Small_Patterns.md)
 * [Go Proverbs](Go_Proverbs.md)
 * [Performance](Performance.md)
+* [Opaque Types](OpaqueTypes.md)
 * [Assembling an application with Dependency Injection](Assembling_an_application_with_Dependency_Injection.md)
 
 ## Concurrency
@@ -58,13 +59,11 @@ An exploration into the Go programming.
 * [Goroutines](Goroutines.md)
 * [The select statement](The_select_statement.md)
 * [Channels](Channels.md)
-* [Concurrency Challenges](Concurrency_Challenges.md)
 * [Parallel Programming](Parallel_Programming.md)
 * [Error handling in parallel programs](Error_handling_in_parallel_programs.md)
 
 ## Go Gotchas
 
-* [The billion dollar mistake](The_billion_dollar_mistake.md)
 * [Data Structure Gotchas](Data_Structure_Gotchas.md)
 * [Language Gotchas](Language_Gotchas.md)
 

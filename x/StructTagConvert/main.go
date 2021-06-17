@@ -17,5 +17,5 @@ func main() {
 	fmt.Printf("%T %T", a, b)
 
 	c := A(b)
-	fmt.Println(c)
+	fmt.Println(c) // main.A main.B{}
 }

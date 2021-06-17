@@ -16,6 +16,6 @@ func fibonacci() func() int {
 func main() {
 	f := fibonacci()
 	for i := 0; i < 10; i++ {
-		fmt.Println(f())
+		fmt.Println(f()) // 0, 1, 1, 2, 3, 5,
 	}
 }

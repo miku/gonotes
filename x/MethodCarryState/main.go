@@ -25,5 +25,9 @@ func main() {
 	Select(s.next)
 	Select(s.next)
 	Select(s.next)
+	Select(s.next)
+	Select(s.next)
+	Select(s.next)
+	Select(fixed)
 	Select(fixed)
 }

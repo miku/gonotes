@@ -11,5 +11,5 @@ func main() {
 	task := Task{}
 	task.Lock()
 	task.state = 1
-	defer task.Unlock()
+	task.Unlock()
 }

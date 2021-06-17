@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../aboutgo"
+		},
+		{
+			"path": "../goforprogrammers"
+		},
+		{
+			"path": "../gokickstart"
+		},
+		{
+			"path": "../golang6h"
+		},
+		{
+			"path": "../golangnetpkg"
+		},
+		{
+			"path": "../gospace"
+		},
+		{
+			"path": "../cignotes"
+		},
+		{
+			"path": "../concgo"
+		},
+		{
+			"path": "../concurrencygo"
+		}
+	],
+	"settings": {}
+}

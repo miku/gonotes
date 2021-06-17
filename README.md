@@ -2,6 +2,9 @@
 
 An exploration into the Go programming.
 
+* Examples: https://github.com/miku/gonotes/tree/main/x
+* Additional Examples: https://github.com/miku/demo
+
 # Outline [54]
 
 ## Intro

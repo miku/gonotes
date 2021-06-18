@@ -62,6 +62,7 @@ func uppercase() {
 	for count := 0; count < 3; count++ {
 		for r := 'A'; r <= 'Z'; r++ {
 			fmt.Printf("%c ", r)
+			// time.Sleep(1 * time.Microsecond)
 		}
 	}
 }

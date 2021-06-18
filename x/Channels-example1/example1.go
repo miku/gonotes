@@ -150,7 +150,7 @@ func fanOutSem() {
 	ch := make(chan string, emps)
 
 	g := runtime.NumCPU()
-	sem := make(chan bool, g)
+	sem := make(chan bool, g) // Limit concurrent requests to number of go routines
 
 	for e := 0; e < emps; e++ {
 		go func(emp int) {

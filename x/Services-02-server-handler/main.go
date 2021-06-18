@@ -19,7 +19,5 @@ func main() {
 	h := http.HandlerFunc(Echo)
 
 	// Start a server listening on port 8000 and responding using Echo.
-	if err := http.ListenAndServe("localhost:8000", h); err != nil {
-		log.Fatalf("error: listening and serving: %s", err)
-	}
+	log.Fatal(http.ListenAndServe("localhost:8000", h))
 }

@@ -29,6 +29,12 @@
 		},
 		{
 			"path": "../concurrencygo"
+		},
+		{
+			"path": "../demo"
+		},
+		{
+			"path": "../gdate"
 		}
 	],
 	"settings": {}

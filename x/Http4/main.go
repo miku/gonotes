@@ -9,6 +9,7 @@ import (
 
 func main() {
 	client := http.DefaultClient
+
 	req, err := http.NewRequest("GET", "https://heise.de", nil)
 	if err != nil {
 		log.Fatal(err)

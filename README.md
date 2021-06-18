@@ -64,7 +64,6 @@ An exploration into the Go programming.
 
 ## Go Gotchas
 
-* [Data Structure Gotchas](Data_Structure_Gotchas.md)
 * [Language Gotchas](Language_Gotchas.md)
 
 ## Tooling

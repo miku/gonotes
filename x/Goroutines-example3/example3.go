@@ -14,7 +14,7 @@ import (
 func init() {
 
 	// Allocate two logical processors for the scheduler to use.
-	runtime.GOMAXPROCS(2)
+	runtime.GOMAXPROCS(1)
 }
 
 func main() {

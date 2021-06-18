@@ -8,13 +8,10 @@ import (
 type handler struct{}
 
 func (h *handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Hello World!\n"))
+	_, _ = w.Write([]byte("Hello World!\n"))
 }
 
 func main() {
-
 	log.Println("http://localhost:8000")
-	http.ListenAndServe("localhost:8000", &handler{})
-
-	// ListenAndServer returns an error, which should be checked.
+	log.Fatal(http.ListenAndServe("localhost:8000", &handler{}))
 }

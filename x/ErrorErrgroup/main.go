@@ -29,5 +29,7 @@ func main() {
 	// Wait for all HTTP fetches to complete.
 	if err := g.Wait(); err == nil {
 		fmt.Println("Successfully fetched all URLs.")
+	} else {
+		fmt.Println(err)
 	}
 }

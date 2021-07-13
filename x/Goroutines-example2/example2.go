@@ -31,20 +31,19 @@ func main() {
 
 	// Create the first goroutine and manage its lifecycle here.
 	go func() {
+		defer wg.Done()
 		printHashes("A")
-		wg.Done()
 	}()
 
 	// Create the second goroutine and manage its lifecycle here.
 	go func() {
+		defer wg.Done()
 		printHashes("B")
-		wg.Done()
 	}()
 
 	// Wait for the goroutines to finish.
 	fmt.Println("Waiting To Finish")
 	wg.Wait()
-
 	fmt.Println("Terminating Program")
 }
 

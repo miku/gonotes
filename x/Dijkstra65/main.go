@@ -1,4 +1,6 @@
-// Solution of a Problem in Concurrent Program Control, http://rust-class.org/static/classes/class19/dijkstra.pdf, https://asciinema.org/a/GX0ntCTr5hFf6CzHDvs6VaeU6
+// Solution of a Problem in Concurrent Program Control,
+// http://rust-class.org/static/classes/class19/dijkstra.pdf,
+// https://asciinema.org/a/GX0ntCTr5hFf6CzHDvs6VaeU6
 package main
 
 import (

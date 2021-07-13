@@ -13,9 +13,12 @@ func main() {
 	fmt.Println(runtime.NumCPU())
 
 	go func() {
-
+		fmt.Println("started")
+		time.Sleep(10 * time.Millisecond)
 	}()
+
 	fmt.Println(runtime.NumGoroutine())
 	time.Sleep(1 * time.Second)
+	fmt.Println(runtime.NumGoroutine())
 
 }

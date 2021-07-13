@@ -20,7 +20,7 @@ func init() {
 
 func main() {
 
-	waitForResult()
+	// waitForResult()
 	// fanOut()
 
 	// waitForTask()
@@ -28,7 +28,7 @@ func main() {
 
 	// Advanced patterns
 	// fanOutSem()
-	// boundedWorkPooling()
+	boundedWorkPooling()
 	// drop()
 	// cancellation()
 }
@@ -39,7 +39,7 @@ func main() {
 // of time you wait on the employee is unknown because you need a
 // guarantee that the result sent by the employee is received by you.
 func waitForResult() {
-	ch := make(chan string)
+	ch := make(chan string) // unbuffered
 
 	go func() {
 		time.Sleep(time.Duration(rand.Intn(500)) * time.Millisecond)
@@ -62,7 +62,7 @@ func waitForResult() {
 // are received by you. No given employee needs an immediate guarantee that you
 // received their result.
 func fanOut() {
-	emps := 2000
+	emps := 1000
 	ch := make(chan string, emps)
 
 	for e := 0; e < emps; e++ {
@@ -130,7 +130,7 @@ func pooling() {
 		fmt.Println("manager : sent signal :", w)
 	}
 
-	close(ch)
+	close(ch) // sentinal
 	fmt.Println("manager : sent shutdown signal")
 
 	time.Sleep(time.Second)
@@ -187,11 +187,11 @@ func boundedWorkPooling() {
 
 	g := runtime.NumCPU()
 	var wg sync.WaitGroup
-	wg.Add(g)
 
 	ch := make(chan string, g)
 
 	for e := 0; e < g; e++ {
+		wg.Add(1)
 		go func(emp int) {
 			defer wg.Done()
 			for p := range ch {
@@ -207,7 +207,6 @@ func boundedWorkPooling() {
 	close(ch)
 	wg.Wait()
 
-	time.Sleep(time.Second)
 	fmt.Println("-------------------------------------------------------------")
 }
 
